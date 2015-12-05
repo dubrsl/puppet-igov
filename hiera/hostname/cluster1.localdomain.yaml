@@ -1,0 +1,9 @@
+#classes:
+#  - node_class1
+#  - node_class2
+#roles:
+#  node_role1:
+#    key1: value1
+#    key2: value2
+#node: node_value
+
