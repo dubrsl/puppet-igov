@@ -1,0 +1,13 @@
+{
+  "name": "aageyev-npm",
+  "version": "0.1.5",
+  "author": "Andrii Ageiev",
+  "summary": "Manage npm on Ubuntu",
+  "license": "Apache 2.0",
+  "source": "https://bitbucket.org/aageyev/npm",
+  "project_page": "https://bitbucket.org/aageyev/npm/wiki/Home",
+  "issues_url": "https://bitbucket.org/aageyev/npm/issues",
+  "dependencies": [
+    {"name":"aageyev-nodejs","version_requirement":">= 0.1.1"}
+  ]
+}

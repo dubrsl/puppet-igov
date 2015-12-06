@@ -7,7 +7,11 @@ ssh_authorized_keys:
     user: 'root'
     type: 'ssh-rsa'
     key:  'AAAAB3NzaC1yc2EAAAADAQABAAABAQDPjtkG+azOJIPA/6jacvTxSFEBA2WVB14Td3nwRuofB3eZ9x1Gu/td3McQBAwElQRLbV5r2V5j2OlHgOmaD1H/scGx0yTeL6I4KosItb/jqYn9PWXlCC1kpnD9tM3O/GPNI9OO0mSYKFj/Vq+ClbzipUaUzfJPMSdhEVyT4KrtDo2trdZ5xdgyPzAMiu/Q2z1mv0k/jnC1sX3GbLJW523OBhEM35GV+QKvsg6cNU8a3nS8cyTDy0oKLu/Gw0DgPbI7zEN3eyC2ELHO8yV+Ixnb4yl8bTNLNY4aMrNtn0x6GlROkq/Lz9+h1/40cRuVxH8JtwWSbYxcpOMBSfkeVIxz'
-
+  'rsa-key':
+    user: 'root'
+    type: 'ssh-rsa'
+    key:  'AAAAB3NzaC1yc2EAAAABIwAAAQEArFSbo7q7XCWDFT0TYMh9Yz86/tZ8W1dn2nGutGwR92t2dvQcM0wCyEruhpngg73T4lEfLEX3Sml34r32IxqXcZ1R7r3aQ+hjd8X3z9WvinFMNsl9LfJZXnUlanKNUsbL9BVBp7KfOFqKT8x3Fy8H3LZj8RKZ0c1Ar/r/hfsriDrBDgVviSqkbZ+VbXEHEMFt8y1C2H6GFR1YVQe2TSrA0yj6ecO1kLlT9dIUI8NZaOOwWa5iixVhT1qxklJDB+6dxe0+uVQbQKmMcNvYrMWq7hzlHG1ReTOP4KCDD7u2wc6/ixnG9BX5aX/VjJkJpiJ+xmkSl6TfD5HyTvUOr2KK5w=='
+    
 #local_users:
 #  ivan:
 #    state:            'present'
