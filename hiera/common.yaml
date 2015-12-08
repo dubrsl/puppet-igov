@@ -44,6 +44,8 @@ ssh::client::options:
 ntp::servers:
     - pool.ntp.org
 
+timezone::timezone: 'Europe/Kiev'
+
 hosts::enable_ipv6_localhost: false
 
 hosts::host_entries:
