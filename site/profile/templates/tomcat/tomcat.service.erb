@@ -3,8 +3,8 @@ Description=Apache Tomcat Web Application Container
 After=network.target
 [Service]
 Type=forking
-ExecStart=/opt/apache-tomcat/bin/startup.sh
-ExecStop=/opt/apache-tomcat/bin/shutdown.sh
+ExecStart=/usr/libexec/tomcat/bin/startup.sh
+ExecStop=/usr/libexec/tomcat/bin/shutdown.sh
 User=tomcat
 Group=tomcat
 [Install]

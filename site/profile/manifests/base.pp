@@ -2,6 +2,7 @@ class profile::base {
 	include ::ntp
 	include ::timezone
 	include ::hosts
+	include ::yum
 
 	# Base firewall policy
 	include ::profile::linuxfw
@@ -27,4 +28,5 @@ class profile::base {
 	if ($local_users != undef) {
 		create_resources('local_user', $local_users)
 	}
+
 }

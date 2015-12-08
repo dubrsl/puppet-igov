@@ -14,11 +14,9 @@ mod 'puppetlabs-tomcat'
 mod 'saz/ssh'
 mod 'saz/sudo'
 mod 'rnelson0/local_user'
-
-mod 'example42/puppi',
-    :git => 'git://github.com/example42/puppi.git'
-mod 'example42/timezone',
-    :git => 'git://github.com/example42/puppet-timezone.git'
+mod 'example42/puppi'
+mod 'example42/timezone'
+mod 'example42/yum'
 
 mod 'ghoneycutt/hosts', '2.2.3'
 
