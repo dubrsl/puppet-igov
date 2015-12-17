@@ -50,15 +50,9 @@ hosts::enable_ipv6_localhost: false
 
 hosts::host_entries:
     '%{hostname}':
-        ip: '%{ec2_local_ipv4}'
         ip: '%{ipaddress}'
         host_aliases:
             - '%{hostname}'
-#            - '%{fqdn}'
-    'log':
-        ip: '10.60.64.17'
-        host_aliases:
-            - 'puppet'
     'bankid.privatbank.ua':
         ip: '52.16.76.220'
         host_aliases:
