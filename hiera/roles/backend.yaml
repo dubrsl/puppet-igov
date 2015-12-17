@@ -1,3 +1,13 @@
 ---
 classes:
   - '::role::backend'
+
+profile::backend::instance:
+  wf-central:
+     name : 'wf-central'
+     folder : 'wf-central'
+     port : '8080'
+  wf-region:
+     name : 'wf-region'
+     folder : 'wf-region'
+     port : '8090'

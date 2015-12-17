@@ -1,0 +1,6 @@
+# Custom AS propertyes (by bw)
+general.bTest=true
+general.auth.login=activiti-master
+general.auth.password=UjhtJnEvf!
+general.sHostCentral=https://test-new.igov.org.ua
+general.sHost=https://test-new.region.igov.org.ua
