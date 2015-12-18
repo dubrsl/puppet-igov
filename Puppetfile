@@ -6,11 +6,11 @@ mod 'puppetlabs/stdlib'
 mod 'puppetlabs/concat'
 mod 'puppetlabs/firewall'
 mod 'puppetlabs/java'
-mod 'puppetlabs/nginx'
-mod 'maestrodev/wget'
+
+mod 'maestrodev-wget'
 mod 'maestrodev/maven'
-mod 'nanliu/staging'
-mod 'puppetlabs/tomcat'
+mod 'nanliu-staging'
+mod 'puppetlabs-tomcat'
 mod 'saz/ssh'
 mod 'saz/sudo'
 mod 'rnelson0/local_user'
@@ -20,6 +20,7 @@ mod 'example42/yum'
 
 mod 'ghoneycutt/hosts', '2.2.3'
 
-#mod 'generic',
-#  :git => 'git@bitbucket.org:egovinfrastructure/egov-generic.git',
-#  :ref => 'prod'
+mod 'igovua/npm',     :git => 'git@bitbucket.org:egovinfrastructure/puppet_module_npm.git'
+mod 'igovua/nodejs',  :git => 'git@bitbucket.org:egovinfrastructure/puppet_module_nodejs.git'
+mod 'igovua/nginx',   :git => 'git@bitbucket.org:egovinfrastructure/puppet_module_nginx.git'
+mod 'igovua/appuser', :git => 'git@bitbucket.org:egovinfrastructure/puppet_modul_appuser.git'

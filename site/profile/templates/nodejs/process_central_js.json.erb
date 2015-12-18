@@ -1,0 +1,37 @@
+{
+	"name": "central-js",
+	"script": "./server/app.js",
+	"args": "",
+	"log_date_format" : "YYYY-MM-DD_HH:mm:ss.SSS",
+	"env": {
+		"NODE_ENV": "<%= @node_env %>",
+		"DEBUG": "<%= @debug %>",
+
+		"sServerRegion": "<%= @sServerRegion %>",
+		"SERVER_PROTOCOL": "<%= @server_protocol %>",
+		"SERVER_PORT": "<%= @server_port %>",
+		"SERVER_KEY": "<%= @server_key %>",
+		"SERVER_CERT": "<%= @server_crt %>",
+
+		"SESSION_SECRET": "<%= @session_secret %>",
+		"SESSION_KEY_ONE": "<%= @session_key_one %>",
+		"SESSION_KEY_TWO": "<%= @session_key_two %>",
+		"SESSION_SECURE": <%= @session_secure %>,
+		"SESSION_MAX_AGE": <%= @session_max_age %>,
+
+		"ACTIVITI_PROTOCOL": "<%= @activiti_protocol %>",
+		"ACTIVITI_HOSTNAME": "<%= @activiti_hostname %>",
+		"ACTIVITI_PORT": "<%= @activiti_port %>",
+		"ACTIVITI_PATH": "<%= @activiti_path %>",
+		"ACTIVITI_USER": "<%= @activiti_user %>",
+		"ACTIVITI_PASSWORD": "<%= @activiti_password %>",
+
+		"BANKID_SPROTOCOL_ACCESS_SERVICE": "<%= @bankid_sprotocol_access_service %>",
+		"BANKID_SHOST_ACCESS_SERVICE": "<%= @bankid_shost_access_service %>",
+		"BANKID_SPROTOCOL_RESOURC_SERVICE": "<%= @bankid_sprotocol_resourc_service %>",
+		"BANKID_SHOST_RESOURCE_SERVICE": "<%= @bankid_shost_resource_service %>",
+		"BANKID_CLIENTID": "<%= @bankid_clientid %>",
+		"BANKID_CLIENT_SECRET": "<%= @bankid_client_secret %>",
+		"NODE_TLS_REJECT_UNAUTHORIZED":"<%= @node_tls_reject_unauthorized %>"
+	}
+}

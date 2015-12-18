@@ -1,0 +1,27 @@
+---
+classes:
+  - role::central_js
+
+role::central_js::http_host_name: 'test1.region.igov.org.ua'
+role::central_js::node_env: 'test-alpha'
+role::central_js::debug: 'false'
+role::central_js::server_port: '8443'
+role::central_js::server_key: '/sybase/cert/server.key'
+role::central_js::server_crt: '/sybase/cert/server.crt'
+role::central_js::session_secret: '4a9mEAPAio6GbycjXWMJVA4h7WNtiC'
+role::central_js::session_key_one: 'iEjjqJYLPOmSwZUIpNdk2lbLcnBgfD'
+role::central_js::session_key_two: 'kY615vZh3IYo3tfSfiT6pNzDgKGuyv'
+role::central_js::session_secure: 'true'
+role::central_js::activiti_protocol: 'https'
+role::central_js::activiti_hostname: 'test.igov.org.ua'
+role::central_js::activiti_port: '8443'
+role::central_js::activiti_path: '/wf/service'
+role::central_js::activiti_user: 'activiti-master'
+role::central_js::activiti_password: 'UjhtJnEvf!'
+role::central_js::bankid_sprotocol_access_service: 'https'
+role::central_js::bankid_shost_access_service: 'bankid.privatbank.ua'
+role::central_js::bankid_sprotocol_resourc_service: 'https'
+role::central_js::bankid_shost_resource_service: 'bankid.privatbank.ua'
+role::central_js::bankid_clientid: '9b0e5c63-9fcb-4b11-84ff-31fc2cea8801'
+role::central_js::bankid_client_secret: 'YWY2ZDk3ZTY4ZDA1NjBmZTI5MmY5YmMwNGNkYTE0NzExNzI3MWMzNw=='
+role::central_js::node_tls_reject_unauthorized: '0'
