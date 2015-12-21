@@ -1,0 +1,4 @@
+--- 
+dev: 
+    puppetmaster: puppet.igov.org.ua
+    base_path: '/etc/puppet/environments'
