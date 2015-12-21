@@ -30,6 +30,63 @@ class profile::tomcat {
 		port => "$port",
 	}
 
+#Configuration files for tomcat
+	file {"$name.AS.properties":
+		ensure  => file,
+		path    => "/var/lib/tomcat/$folder/conf/AS.properties",
+		mode    => '0644',
+		content => template("profile/tomcat/$name/AS.properties.erb"),
+	}
+	file {"$name.bankID.properties":
+		ensure  => file,
+		path    => "/var/lib/tomcat/$folder/conf/bankID.properties",
+		mode    => '0644',
+		content => template("profile/tomcat/$name/bankID.properties.erb"),
+	}
+	file {"$name.catalina.properties":
+		ensure  => file,
+		path    => "/var/lib/tomcat/$folder/conf/catalina.properties",
+		mode    => '0644',
+		content => template("profile/tomcat/$name/catalina.properties.erb"),
+	}
+	file {"$name.db.properties":
+		ensure  => file,
+		path    => "/var/lib/tomcat/$folder/conf/db.properties",
+		mode    => '0644',
+		content => template("profile/tomcat/$name/db.properties.erb"),
+	}
+	file {"$name.email.properties":
+		ensure  => file,
+		path    => "/var/lib/tomcat/$folder/conf/email.properties",
+		mode    => '0644',
+		content => template("profile/tomcat/$name/email.properties.erb"),
+	}
+	file {"$name.log4j.properties":
+		ensure  => file,
+		path    => "/var/lib/tomcat/$folder/conf/log4j.properties",
+		mode    => '0644',
+		content => template("profile/tomcat/$name/log4j.properties.erb"),
+	}
+	file {"$name.merch.properties":
+		ensure  => file,
+		path    => "/var/lib/tomcat/$folder/conf/merch.properties",
+		mode    => '0644',
+		content => template("profile/tomcat/$name/merch.properties.erb"),
+	}
+	file {"$name.redisProps.properties":
+		ensure  => file,
+		path    => "/var/lib/tomcat/$folder/conf/redisProps.properties",
+		mode    => '0644',
+		content => template("profile/tomcat/$name/redisProps.properties.erb"),
+	}
+	file {"$name.storage-mongodb.properties":
+		ensure  => file,
+		path    => "/var/lib/tomcat/$folder/conf/storage-mongodb.properties",
+		mode    => '0644',
+		content => template("profile/tomcat/$name/storage-mongodb.properties.erb"),
+	}
+
+#service for tomcat
 	file {"tomcat-$name.service":
 		ensure  => file,
 		path    => "/etc/systemd/system/tomcat-$name.service",
