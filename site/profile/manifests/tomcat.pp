@@ -20,15 +20,15 @@ class profile::tomcat {
 	notify { "Create instance=$name folder=$folder": }
 
 	
-	tomcat::instance { "$name":
-		source_url => 'http://apache.cp.if.ua/tomcat/tomcat-8/v8.0.28/bin/apache-tomcat-8.0.28.tar.gz',
-		catalina_base => "/var/lib/tomcat/$folder",
-	}
+#	tomcat::instance { "$name":
+#		source_url => 'http://apache.cp.if.ua/tomcat/tomcat-8/v8.0.28/bin/apache-tomcat-8.0.28.tar.gz',
+#		catalina_base => "/var/lib/tomcat/$folder",
+#	}
 
-	tomcat::config::server { "$name":
-		catalina_base => "/var/lib/tomcat/$folder",
-		port => "$port",
-	}
+#	tomcat::config::server { "$name":
+#		catalina_base => "/var/lib/tomcat/$folder",
+#		port => "$port",
+#	}
 
 #Configuration files for tomcat
 	file {"$name.AS.properties":
@@ -85,6 +85,12 @@ class profile::tomcat {
 		mode    => '0644',
 		content => template("profile/tomcat/$name/storage-mongodb.properties.erb"),
 	}
+	file {"$name.server.xml":
+		ensure  => file,
+		path    => "/var/lib/tomcat/$folder/conf/server.xml",
+		mode    => '0644',
+		content => template("profile/tomcat/$name/server.xml.erb"),
+	}
 
 #service for tomcat
 	file {"tomcat-$name.service":
@@ -106,6 +112,8 @@ class profile::tomcat {
 	}
     }
 
-    $instance = hiera('profile::backend::instance', undef)
-    create_resources( create_instance, $instance )
+#    $instance = hiera('profile::backend::instance', undef)
+#    if $instance {
+#	create_resources( create_instance, $instance )
+#    }
 }
